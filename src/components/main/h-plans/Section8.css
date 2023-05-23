@@ -1,0 +1,192 @@
+.section8{
+    display: flex;
+    flex-direction: column;
+    padding: 121px 106px 149px 107px;
+}
+.header6{
+    margin: auto;
+    margin-bottom: 191px;
+    width: 858px;
+    color:#2E2579;
+    font-family: Nunito;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.plans{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    background-color: #F7F6FF;
+    border-radius: 16px;
+    align-items: center;
+}
+.plan1{
+    height: 770px;
+    width: 35%;
+    border-radius: 5.333333492279053px;
+    padding: 53px 32px 53px 32px;
+    display: flex;
+    flex-direction: column;
+}
+.plan1:hover{
+    background-color: #2E2579;
+    border-radius: 16px;
+    color:#ffffff;
+}
+.plan-head{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #191D23;
+}
+.plan-body{
+    margin-top: 15px;
+    color: #505056;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.plan-price{
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+}
+.plan-num{
+    color: #191D23;
+    font-family: Nunito;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+.plan-month{
+    color: #4B5768;
+    margin-left: 11px;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.plan-btn{
+    height: 58.66666793823242px;
+    width: 90%;
+    margin: 32px auto 52px auto;
+    border-radius: 5.333333492279053px;
+    padding: 8px 16px 8px 16px;
+    background-color: #ffffff;
+    border: 2px solid #2112A0;
+    color: #2112A0;
+    font-family: Rubik;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.plan-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.plan-list-check, .plan-list-cross,
+.plan-list-check2, .plan-list-cross2{
+    display: flex;
+    align-items: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.plan-list-check{
+    color: #505056;
+}
+.plan-list-cross{
+    color: #A0ABBB;
+}
+.plan1-check, .plan1-cross,
+.plan2-check, .plan2-cross{
+    margin-right: 23px;
+}
+.plan1:hover .plan-head, .plan1:hover .plan-body, 
+.plan1:hover .plan-num, .plan1:hover .plan-month,
+.plan1:hover .plan-list-check, .plan1:hover .plan-list-cross{
+    color:white;
+}
+
+@media (max-width:1165px){
+    .plan-btn{
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+    .plan-list-check, .plan-list-cross,
+    .plan-list-check2, .plan-list-cross2{
+        font-size: 14px;
+    }
+}
+@media (max-width:1000px) {
+    .header6{
+        width: 80%;
+        margin-bottom: 100px;
+    }
+    .plans{
+        flex-direction: column;
+        width: 75%;
+    }
+    .plan1{
+        width: 100%;
+    }
+}
+@media (max-width:600px){
+    .section8{
+        padding: 30px 0px 30px 0px;
+    }
+    .header6{
+        font-size: 28px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .plan1{
+        height: auto;
+        padding: 55px 30px 55px 30px;
+        border-radius: 0;
+        width: 100%;
+    }
+    .plan-price{
+        margin-top: 20px;
+    }
+    .plan-num{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .plan-btn{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .plan-list{
+        gap: 15px;
+    }
+    .plan1-check, .plan1-cross,
+    .plan2-check, .plan2-cross{
+        margin-right: 15px;
+    }
+}
+@media (max-width:300px) {
+    .plan-btn{
+        font-size: 16px;
+    }
+}

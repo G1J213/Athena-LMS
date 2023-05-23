@@ -1,0 +1,23 @@
+.footer2{
+    background-color: #2E2579;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-text{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width:550px) {
+    .footer2{
+        padding: 10px 15px 10px 15px;
+    }
+    .footer-text{
+        font-size: 9px;
+    }
+}

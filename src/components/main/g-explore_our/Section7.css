@@ -1,0 +1,110 @@
+.section7{
+    display: flex;
+    flex-direction: column;
+    padding: 161px 100px 0px 100px;
+}
+.header5{
+    color:#2E2579;
+    font-family: Nunito;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.panels{
+    width: 90%;
+    display: flex;
+    gap:5px;
+    align-items: center;
+    margin:auto;
+}
+.panel1, .panel2, .panel3{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 89px;
+    height: 540px;
+    width: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.panel1{
+    background-image: url('./pic1.png');
+}
+.panel2{
+    background-image: url('./pic2.png');
+}
+.panel3{
+    background-image: url('./pic3.png');
+}
+.panel-text{
+    margin-left: 25px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.arrow1{
+    height: 24px;
+    width: 24px;
+    margin-left: 6px;
+}
+
+@media (max-width:1500px) {
+    .panel1, .panel2, .panel3{
+        background-size: auto 100%;
+    }
+}
+@media (max-width:800px) {
+    .panels{
+        flex-direction: column;
+        margin-top: 89px;
+    }
+    .panel1, .panel2, .panel3{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-size: 100% auto;
+    }
+}
+@media (max-width:600px){
+    .section7{
+        padding: 30px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        min-height: 60vh;
+    }
+    .header5{
+        width: 80%;
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .panels{
+        width: 100%;
+        margin: 30px 0px 30px 0px;
+    }
+    .panel1, .panel2, .panel3{
+        margin-top: 0;
+        margin-bottom: 0;
+        background-size: auto 100%;
+        align-items: center ;
+    }
+}
+@media (max-width:300px){
+    .header5{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .panel-text{
+        font-size: 20px;
+    }
+}
