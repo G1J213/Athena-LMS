@@ -47,10 +47,9 @@
     white-space: nowrap;
     border-bottom: 1px solid #DCDCE5;
     gap: 30px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
-.row2::-webkit-scrollbar {
-    display: none;
-} 
 .btn-all, .btn-design, .btn-product,
 .btn-branding, .btn-mobile, .btn-web{
     height: 52px;
@@ -72,7 +71,6 @@
 .btn-branding:hover, .btn-branding:focus, .btn-branding:active,
 .btn-mobile:hover, .btn-mobile:focus, .btn-mobile:active,
 .btn-web:hover, .btn-web:focus, .btn-web:active{
-    font-weight: 700;
     background-color: #2E2579;
     color: #ffffff;
     border: 0px;
@@ -85,8 +83,21 @@
     align-items: center;
     display: flex;
     gap: 10px;
-    overflow: auto;
     overflow-x: scroll;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.row2::-webkit-scrollbar,.row3::-webkit-scrollbar {
+    background-color: #f1f1f1;
+    height: 0.4rem;
+}
+.row2::-webkit-scrollbar-thumb, .row3::-webkit-scrollbar-thumb {
+    background-color: #DCDCE5;
+    border-radius: 100px;
+}
+.row2::-webkit-scrollbar-track, .row3::-webkit-scrollbar-track {
+    background-color: #F7F6FF;
 }
 .card{
     height: 480px;
