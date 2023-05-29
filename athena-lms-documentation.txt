@@ -1,0 +1,185 @@
+ATHENA LMS LANDING PAGE CODE DOCUMENTATION
+
+React JS, HTML & CSS
+
+
+App.js (App.css) - App component
+	Funtion: App
+	Components: <Navbar />
+      		<Main /> 				# Divided into different Sections (Main being Section 1)
+        			<Section2 />
+        			<Section3 />
+        			<Section4 />
+        			<Section5 />
+        			<Section6 />
+        			<Section7 />
+        			<Section8 />
+        			<Section9 />
+      		<Footer1 />
+      		<Footer2 />
+
+3 Main Components - nav, main(body), footer
+
+src(folders): components: nav, main, footer
+
+nav(folder): Navbar.js, Dropdown.js (Navbar.css)
+
+	Navbar.js:
+
+		Funtion: Navbar
+		Classes - navbar
+				nav-container
+					logo 
+					navbar-items
+					navbar-item4
+					navbar-sign-in
+		Components: <Dropdown />		# Component for Mobile dropdown menu
+
+
+	Dropdown.js:
+
+		Function: Dropdown
+		Varaibles: menuRef		# Use to contain useRef
+			Funtion: useEffect 	# function for mouseclick 
+		Classes: dropdown
+				toggle-btn
+				dropdown-menu
+					dropdown-items
+
+
+main(folders): a-home, b-home, c-purple, d-what_is_athena, e-we_can_custom, 
+		   f-future_proof, g-explore_our, h-plans, i-have_question
+
+
+	a-home: Main.js(Main.css)
+		
+		Function: Main
+		Classes: main
+				content1
+					header1
+					context1
+					content1-btns
+				image1
+				contentm
+					context-m
+					contentm-btns
+						content1-explore
+						content1-testimonial	
+
+
+	b-home: Section2.js(Section2.css)
+	
+		Funtion: Section2
+		Classes: section2
+				part1
+				part2
+
+
+	c-purple: Section3.js(Section3.css)
+		
+		Function: Section3
+		Classes: section3
+				item1
+					item1-header
+					item1-body
+					item1-show
+				div_mobile
+					subject1
+					subject3
+				subject3
+
+
+	d-what_is_athena: Section4.js(Section4.css)
+
+		Function: Section4
+		Classes: section4
+				header2
+				body1
+				body2
+
+	
+	e-we_can_custom: Section5.js(Section5.css)
+	
+		Function: Section5
+		Classes: section5
+				content2
+					header3
+						image3
+					body3
+					checklist
+						checklist-item x3
+					checklist2
+						checklist-item x3
+				image3		
+
+	
+	f-future_proof: Section6.js(Section6.css)		
+
+		Function: Section6
+		Classes: section6
+				row1
+					header4
+					row1-btn
+				row2			# Contains all the buttons
+					
+				row3			# Contains all the cards
+					card
+						
+
+	g-explore_our: Section7.js(Section7.css)
+
+		Function: Section7
+		Classes: section7
+				header5
+				panels
+					panel1
+					panel2
+					panel3
+
+	
+	h-plans: Section8.js(Section8.css)
+
+		Function: Section8
+		Classes: section8
+				header6
+				plans			# Plans and Pricing div
+					plan1
+						plan-head
+						plan-body
+						plan-price
+							plan-num 
+							plan-month
+						plan-btn
+						plan-list	# Contains the check and cross marks in the plans
+
+
+	i-have_question: Section9
+		
+		Function: Section9
+		Classes: section9
+				form-header
+				form-body
+				form1
+					form-input
+					submit-btn		
+
+
+footer(folder): footer1, footer2	
+
+
+	footer1: Footer1.js(Footer1.css)
+
+		Function: Footer1
+		Classes: footer1
+				img-footer
+				footer-details
+					footer-item1
+					footer-item2
+						social
+		
+
+	footer2: Footer2.js(Footer2.css)
+		
+		Function: Footer2
+		Classes: footer2
+				footer-text
